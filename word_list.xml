@@ -1,0 +1,4 @@
+<WordEntities>
+    <WordEntity  text="Hello" language="de" read_score="5" write_score="4" group_number="1" is_regex="false" topic_type="1" word_list="nsfw/all"/>
+    <WordEntity  text="World" language="de" read_score="3" write_score="2" group_number="1" is_regex="false" topic_type="2" word_list="nsfw/all"/>
+</WordEntities>
