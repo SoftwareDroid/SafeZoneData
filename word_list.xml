@@ -128,7 +128,7 @@
 
         <WordEntity
             text="tagesschau" language="de" read_score="32" write_score="32"
-            group_number="1" is_regex="false" topic_type="1" word_list="all/Blocking" />
+            group_number="1" is_regex="false" topic_type="1" word_list="all/NewsBlocking" />
 <WordEntity
             text="\\bnackt\\b" language="de" read_score="32" write_score="32" group_number="1"
             is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
