@@ -64,7 +64,7 @@
             group_number="1" is_regex="false" topic_type="2" word_list="Firefox/Exceptions" />
 <WordEntity
             text="Firefox Suggest" language="en" read_score="0" write_score="0"
-            group_number="2" is_regex="false" topic_type="2" word_list="/ingore/Firefox" />
+            group_number="2" is_regex="false" topic_type="2" word_list="Firefox/Exceptions" />
 <WordEntity
             text="Jump back in" language="en" read_score="0" write_score="0"
             group_number="3" is_regex="false" topic_type="2" word_list="Firefox/Exceptions" />
