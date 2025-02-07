@@ -1,0 +1,45 @@
+<root>
+    <exceptions major="1" minor="0">
+        <exception app="com.android.settings" visible="true" editable="false" />
+        <exception app="com.android.settings" visible="true" editable="false" />
+        <exception app="com.android.systemui" visible="true" editable="false" />
+        <exception app="com.google.android.inputmethod.latin" visible="true" editable="false" />
+        <exception app="com.google.android.apps.maps" visible="true" editable="true" />
+        <exception app="net.osmand.plus" visible="true" editable="true" />
+        <exception app="com.simplemobiletools.gallery.pro" visible="true" editable="true" />
+        <exception app="com.airbnb.android" visible="true" editable="true" />
+        <exception app="com.google.android.contacts" visible="true" editable="false" />
+        <exception app="com.google.android.deskclock" visible="true" editable="false" />
+        <exception app="de.nebenan.app" visible="true" editable="true" />
+        <exception app="de.flixbus.app" visible="true" editable="true" />
+        <exception app="org.fdroid.fdroid" visible="true" editable="true" />
+        <exception app="net.tandem" visible="true" editable="true" />
+        <exception app="com.meetup" visible="true" editable="true" />
+        <exception app="ch.protonvpn.android" visible="true" editable="true" />
+        <exception app="com.beemdevelopment.aegis" visible="true" editable="true" />
+        <exception app="io.github.muntashirakon.AppManager" visible="true" editable="true" />
+        <exception app="com.governikus.ausweisapp2" visible="true" editable="true" />
+        <exception app="com.mediatek.camera" visible="true" editable="true" />
+        <exception app="org.thoughtcrime.securesms" visible="true" editable="true" />
+        <exception app="ru.vsms" visible="true" editable="true" />
+        <exception app="com.whatsapp" visible="true" editable="true" />
+        <exception app="capital.scalable.droid" visible="true" editable="true" />
+        <exception app="splid.teamturtle.com.splid" visible="true" editable="true" />
+        <exception app="com.fsck.k9" visible="true" editable="true" />
+        <exception app="com.trello" visible="true" editable="true" />
+        <exception app="com.maxistar.textpad" visible="true" editable="true" />
+        <exception app="cz.mobilesoft.appblock" visible="true" editable="true" />
+        <exception app="com.standardnotes" visible="true" editable="true" />
+        <exception app="com.google.android.calculator" visible="true" editable="true" />
+        <exception app="com.getyourguide.android" visible="true" editable="true" />
+        <exception app="de.c24.bankapp" visible="true" editable="true" />
+        <exception app="de.hafas.android.db" visible="true" editable="true" />
+        <exception app="ws.xsoh.etar" visible="true" editable="true" />
+        <exception app="com.ichi2.anki" visible="true" editable="true" />
+        <exception app="net.sourceforge.opencamera" visible="true" editable="true" />
+        <exception app="com.epson.epsonsmart" visible="true" editable="true" />
+        <exception app="de.mm20.launcher2" visible="true" editable="true" />
+        <exception app="de.reimardoeffinger.quickdic" visible="true" editable="true" />
+        <exception app="de.mm20.launcher2.release" visible="true" editable="true" />
+    </exceptions>
+</root>
