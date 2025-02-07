@@ -1,0 +1,5 @@
+<root>
+    <filters>
+    <content_filter name="NSFW Content Filter" word_list="" kill="true" enabled="true" user_created="false" readable="true" writable="true" ignore_case="true" app_group="0" what_to_check="0" short_description="Filters NSFW content like pornografic content" window_action="0" button_action="1"/>
+    </filters>
+</root>
