@@ -18,7 +18,8 @@
         <WordListEntity name="all/Exceptions" version="1" />
     </WordListEntities>
     <WordEntities>
-        <!--Some generic ignore list which can be used in many apps-->
+        <!--Some
+        generic ignore list which can be used in many apps-->
     <WordEntity text="Search" language="de" read_score="0"
             write_score="0"
             group_number="1" is_regex="false" topic_type="2"
@@ -27,7 +28,8 @@
             write_score="0"
             group_number="2" is_regex="false" topic_type="2"
             word_list="all/Exceptions" />
-    <WordEntity text="Recent Searches" language="de" read_score="0"
+    <WordEntity text="Recent Searches" language="de"
+            read_score="0"
             write_score="0"
             group_number="3" is_regex="false" topic_type="2"
             word_list="all/Exceptions" />
@@ -35,16 +37,18 @@
             write_score="0"
             group_number="4" is_regex="false" topic_type="2"
             word_list="all/Exceptions" />
-        
-        <!--Bookbeat ingore search-->
+
+        <!--Bookbeat
+        ingore search-->
     <WordEntity text="Search" language="de" read_score="0"
             write_score="0"
             group_number="1" is_regex="false" topic_type="2"
             word_list="Bookbeat/Exceptions" />
-        
+
         <!--Ard
         Audiothek-->
-    <WordEntity text="Suche nach Episoden und Podcasts" language="de" read_score="0"
+    <WordEntity text="Suche nach Episoden und Podcasts"
+            language="de" read_score="0"
             write_score="0"
             group_number="1" is_regex="false" topic_type="2"
             word_list="AreAudiothek/Exceptions" />
@@ -124,9 +128,7 @@
             text="SafeZone" language="en" read_score="0" write_score="0"
             group_number="9" is_regex="false" topic_type="2" word_list="Settings/ContentFilter" />
 
-
-
-        <WordEntity
+<WordEntity
             text="tagesschau" language="de" read_score="32" write_score="32"
             group_number="1" is_regex="false" topic_type="1" word_list="all/NewsBlocking" />
 <WordEntity
@@ -196,10 +198,6 @@
 <WordEntity text="kondom" language="de" read_score="15"
             write_score="32" group_number="1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
-    
-    <WordEntity
-            text="tagesschau" language="de" read_score="32" write_score="32" group_number="1"
-            is_regex="false" topic_type="1" word_list="all/NewsBlocking" />
 <WordEntity
             text="vibrationsring"
             language="de" read_score="32" write_score="55" group_number="1" is_regex="false"
