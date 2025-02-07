@@ -14,8 +14,34 @@
         <WordListEntity name="Settings/ContentFilter" version="1" />
         <WordListEntity name="Telegram/BlockPeopleNearbyTab" version="1" />
         <WordListEntity name="AreAudiothek/Exceptions" version="1" />
+        <WordListEntity name="Bookbeat/Exceptions" version="1" />
+        <WordListEntity name="all/Exceptions" version="1" />
     </WordListEntities>
     <WordEntities>
+        <!--Some generic ignore list which can be used in many apps-->
+    <WordEntity text="Search" language="de" read_score="0"
+            write_score="0"
+            group_number="1" is_regex="false" topic_type="2"
+            word_list="all/Exceptions" />
+    <WordEntity text="History" language="de" read_score="0"
+            write_score="0"
+            group_number="2" is_regex="false" topic_type="2"
+            word_list="all/Exceptions" />
+    <WordEntity text="Recent Searches" language="de" read_score="0"
+            write_score="0"
+            group_number="3" is_regex="false" topic_type="2"
+            word_list="all/Exceptions" />
+    <WordEntity text="Settings" language="de" read_score="0"
+            write_score="0"
+            group_number="4" is_regex="false" topic_type="2"
+            word_list="all/Exceptions" />
+        
+        <!--Bookbeat ingore search-->
+    <WordEntity text="Search" language="de" read_score="0"
+            write_score="0"
+            group_number="1" is_regex="false" topic_type="2"
+            word_list="Bookbeat/Exceptions" />
+        
         <!--Ard
         Audiothek-->
     <WordEntity text="Suche nach Episoden und Podcasts" language="de" read_score="0"
