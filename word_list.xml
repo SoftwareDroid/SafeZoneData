@@ -67,7 +67,7 @@
             language="de" read_score="0"
             write_score="0"
             group_number="1" is_regex="false" topic_type="2"
-            word_list="AreAudiothek/Exceptions" />
+            word_list="ArdAudiothek/Exceptions" />
 
         <!--Telegram/BlockPeopleNearbyTab-->
     <WordEntity text="People Nearby" language="en"
