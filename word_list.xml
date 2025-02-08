@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
+    <languages>
+        <language short="de" long="german"/>
+        <language short="en" long="english"/>
+    </languages>
     <WordListEntities>
         <!--
         name="<app | all> / <Name>"" There are some standarized names like Exceptions, which is used
