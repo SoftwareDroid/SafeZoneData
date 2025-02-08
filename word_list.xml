@@ -8,18 +8,20 @@
         <!--
         name="<app | all> / <Name>"" There are some standarized names like Exceptions, which is used
         to prevent content filtering to make the app still usable like in the search or in the
-        history, settings-->
-        <WordListEntity name="all/NSFW_Filter" version="1" />
-        <WordListEntity name="all/EnforceSafeSearch" version="1" />
-        <WordListEntity name="all/NewsBlocking" version="1" />
-        <WordListEntity name="Firefox/Exceptions" version="1" />
-        <WordListEntity name="Pocketcast/Exceptions" version="1" />
-        <WordListEntity name="NewPipe/Exceptions" version="1" />
-        <WordListEntity name="Settings/ContentFilter" version="1" />
-        <WordListEntity name="Telegram/BlockPeopleNearbyTab" version="1" />
-        <WordListEntity name="AreAudiothek/Exceptions" version="1" />
-        <WordListEntity name="Bookbeat/Exceptions" version="1" />
-        <WordListEntity name="all/Exceptions" version="1" />
+        history, settings
+        Every app ID contains a . so if not interpret as app group
+        -->
+        <WordListEntity name="all/NSFW_Filter" app="all" version="1" />
+        <WordListEntity name="all/EnforceSafeSearch" app="browser" version="1" />
+        <WordListEntity name="all/NewsBlocking" app="all" version="1" />
+        <WordListEntity name="Firefox/Exceptions" app="org.mozilla.firefox" version="1" />
+        <WordListEntity name="Pocketcast/Exceptions" app="au.com.shiftyjelly.pocketcasts" version="1" />
+        <WordListEntity name="NewPipe/Exceptions" app="org.schabi.newpipe" version="1" />
+        <WordListEntity name="Settings/ContentFilter" app="com.android.settings" version="1" />
+        <WordListEntity name="Telegram/BlockPeopleNearbyTab" app="org.telegram.messenger" version="1" />
+        <WordListEntity name="ArdAudiothek/Exceptions" app="de.ard.audiothek" version="1" />
+        <WordListEntity name="Bookbeat/Exceptions" app="com.bookbeat.android" version="1" />
+        <WordListEntity name="all/Exceptions" app="all" version="1" />
     </WordListEntities>
     <WordEntities>
         <!--Some
