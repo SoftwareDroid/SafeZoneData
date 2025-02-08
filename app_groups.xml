@@ -1,0 +1,8 @@
+<!-- This classifys apps into group currently not used-->
+<root>
+    <app_groups>
+        <browser>
+            <entry app="org.mozilla.firefox"/>
+        </browser>
+    </app_groups>
+</root>

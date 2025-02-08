@@ -1,16 +1,20 @@
 <root>
     <filters>
     <!-- WordList ending in '/Exception' create automaticlly their content filters-->
-    <content_filter name="PackageInstaller/AntiCheat" word_list="PackageInstaller/ContentFilter" kill="false" enabled="true" user_created="false" readable="false" writable="true" ignore_case="true" app_group="0" what_to_check="0" short_description="Filters NSFW content like pornografic content" window_action="2" button_action="1"/>
-    <content_filter name="Settings/AntiCheat" word_list="Settings/ContentFilter" kill="false" enabled="true" user_created="false" readable="true" writable="false" ignore_case="true" app_group="0" what_to_check="0" short_description="Filters NSFW content like pornografic content" window_action="2" button_action="1"/>
+    <content_filter name="PackageInstaller/AntiCheat" word_list="PackageInstaller/ContentFilter" kill="false" enabled="true" user_created="false" readable="false" writable="true" ignore_case="true" app_group="0" what_to_check="0" short_description="Prevents the user from disabling this app" window_action="2" button_action="1"/>
+    <content_filter name="Settings/AntiCheat" word_list="Settings/ContentFilter" kill="false" enabled="true" user_created="false" readable="true" writable="false" ignore_case="true" app_group="0" what_to_check="0" short_description="Prevents the user from disabling this app" window_action="2" button_action="1"/>
     <content_filter name="NSFW Content Filter" word_list="all/NSFW" kill="true" enabled="true" user_created="false" readable="true" writable="true" ignore_case="true" app_group="0" what_to_check="0" short_description="Filters NSFW content like pornografic content" window_action="0" button_action="1"/>
     <content_filter name="NSFW Enforce Safe Search" word_list="all/NSFW" kill="true" enabled="true" user_created="false" readable="true" writable="true" ignore_case="true" app_group="0" what_to_check="0" short_description="Enforces Safe Search" window_action="0" button_action="1"/>
-    <content_filter name="News Block" word_list="all/NSFW" kill="true" enabled="true" user_created="false" readable="true" writable="true" ignore_case="true" app_group="0" what_to_check="0" short_description="Blocks Tagesschau" window_action="0" button_action="1"/>
+    <content_filter name="News Block" word_list="all/NewsBlocking" kill="true" enabled="true" user_created="false" readable="true" writable="true" ignore_case="true" app_group="0" what_to_check="0" short_description="Blocks Tagesschau" window_action="0" button_action="1"/>
     </filters>
 
     <filter_instances>
         <!-- Filter instances can be created here-->
         <content_filter_instance filter_name="Settings/AntiCheat" priority="1" app="com.android.settings"/>
         <content_filter_instance filter_name="PackageInstaller/AntiCheat" priority="1" app="com.google.android.packageinstaller"/>
+        <!-- Example Filter for firefox. Default Exception are created automatically if the List exists-->
+        <content_filter_instance filter_name="NSFW Enforce Safe Search" priority="5" app="org.mozilla.firefox"/>
+        <content_filter_instance filter_name="NSFW Content Filter" priority="6" app="org.mozilla.firefox"/>
+        <content_filter_instance filter_name="News Block" priority="7" app="org.mozilla.firefox"/>
     </filter_instances>
 </root>
