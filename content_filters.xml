@@ -7,7 +7,12 @@
     <content_filter name="NSFW Enforce Safe Search" word_list="all/NSFW" kill="true" enabled="true" user_created="false" readable="true" writable="true" ignore_case="true" app_group="0" what_to_check="ALL" short_description="Enforces Safe Search" window_action="WARNING" button_action="BACK_BUTTON"/>
     <content_filter name="News Block" word_list="all/NewsBlocking" kill="true" enabled="true" user_created="false" readable="true" writable="true" ignore_case="true" app_group="0" what_to_check="ALL" short_description="Blocks Tagesschau" window_action="WARNING" button_action="BACK_BUTTON"/>
     </filters>
-
+    <!-- Create AppEntries if you do not want the default settings which is for example readable and writeable-->
+    <apps>
+        <app_enitiy app="com.android.settings" readable="true" writable="false" comment="" enabled="true" check_all_events="true"/>
+        <app_enitiy app="com.google.android.packageinstaller" readable="true" writable="false" comment="" enabled="true" check_all_events="true"/>
+        <app_enitiy app="org.mozilla.firefox" readable="true" writable="true" comment="" enabled="true" check_all_events="true"/>
+    </apps>
     <filter_instances>
         <!-- Filter instances can be created here-->
         <content_filter_instance filter_name="Settings/AntiCheat" priority="1" app="com.android.settings"/>
