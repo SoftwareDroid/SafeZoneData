@@ -3,15 +3,15 @@
     <!-- WordList ending in '/Exception' create automaticlly their content filters-->
     <content_filter name="PackageInstaller/AntiCheat" word_list="PackageInstaller/ContentFilter" kill="false" enabled="true" user_created="false" readable="false" writable="true" ignore_case="true" app_group="0" what_to_check="READ_ONLY" short_description="Prevents the user from disabling this app" window_action="NO_WARNING_AND_STOP" button_action="BACK_BUTTON"/>
     <content_filter name="Settings/AntiCheat" word_list="Settings/ContentFilter" kill="false" enabled="true" user_created="false" readable="true" writable="false" ignore_case="true" app_group="0" what_to_check="READ_ONLY" short_description="Prevents the user from disabling this app" window_action="NO_WARNING_AND_STOP" button_action="BACK_BUTTON"/>
-    <content_filter name="NSFW Content Filter" word_list="all/NSFW" kill="true" enabled="true" user_created="false" readable="true" writable="true" ignore_case="true" app_group="0" what_to_check="ALL" short_description="Filters NSFW content like pornografic content" window_action="WARNING" button_action="BACK_BUTTON"/>
-    <content_filter name="NSFW Enforce Safe Search" word_list="all/NSFW" kill="true" enabled="true" user_created="false" readable="true" writable="true" ignore_case="true" app_group="0" what_to_check="ALL" short_description="Enforces Safe Search" window_action="WARNING" button_action="BACK_BUTTON"/>
+    <content_filter name="NSFW Content Filter" word_list="all/NSFW_Filter" kill="true" enabled="true" user_created="false" readable="true" writable="true" ignore_case="true" app_group="0" what_to_check="ALL" short_description="Filters NSFW content like pornografic content" window_action="WARNING" button_action="BACK_BUTTON"/>
+    <content_filter name="NSFW Enforce Safe Search" word_list="all/EnforceSafeSearch" kill="true" enabled="true" user_created="false" readable="true" writable="true" ignore_case="true" app_group="0" what_to_check="ALL" short_description="Enforces Safe Search" window_action="WARNING" button_action="BACK_BUTTON"/>
     <content_filter name="News Block" word_list="all/NewsBlocking" kill="true" enabled="true" user_created="false" readable="true" writable="true" ignore_case="true" app_group="0" what_to_check="ALL" short_description="Blocks Tagesschau" window_action="WARNING" button_action="BACK_BUTTON"/>
     </filters>
-    <!-- Create AppEntries if you do not want the default settings which is for example readable and writeable-->
+    <!-- Default creation is not currently supported, so if-->
     <apps>
-        <app_enitiy app="com.android.settings" readable="true" writable="false" comment="" enabled="true" check_all_events="true"/>
-        <app_enitiy app="com.google.android.packageinstaller" readable="true" writable="false" comment="" enabled="true" check_all_events="true"/>
-        <app_enitiy app="org.mozilla.firefox" readable="true" writable="true" comment="" enabled="true" check_all_events="true"/>
+        <app_entity app="com.android.settings" readable="true" writable="false" comment="" enabled="true" check_all_events="true"/>
+        <app_entity app="com.google.android.packageinstaller" readable="true" writable="false" comment="" enabled="true" check_all_events="true"/>
+        <app_entity app="org.mozilla.firefox" readable="true" writable="true" comment="" enabled="true" check_all_events="true"/>
     </apps>
     <filter_instances>
         <!-- Filter instances can be created here-->

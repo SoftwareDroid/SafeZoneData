@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
     <languages>
-        <language short="de" long="german"/>
-        <language short="en" long="english"/>
+        <language short="de" long="german" enabled="true"/>
+        <language short="en" long="english" enabled="true"/>
     </languages>
     <WordListEntities>
         <!--
@@ -23,13 +23,31 @@
         <WordListEntity name="ArdAudiothek/Exceptions" app="de.ard.audiothek" version="1" />
         <WordListEntity name="Bookbeat/Exceptions" app="com.bookbeat.android" version="1" />
         <WordListEntity name="all/Exceptions" app="all" version="1" />
+        <WordListEntity name="test" app="all" version="1" />
     </WordListEntities>
+
+
     <WordEntities>
+        <!-- Test List-->
+<WordEntity text="\\bcat\\b" language="de" read_score="15"
+            write_score="10"
+            group_number="-1" is_regex="true" topic_type="2"
+            word_list="test" />
+    <WordEntity text="dog" language="de" read_score="5"
+            write_score="5"
+            group_number="2" is_regex="false" topic_type="2"
+            word_list="test" />
+    <WordEntity text="home" language="de"
+            read_score="100"
+            write_score="100"
+            group_number="3" is_regex="false" topic_type="2"
+            word_list="test" />
+
         <!--Some
         generic ignore list which can be used in many apps-->
     <WordEntity text="Search" language="de" read_score="0"
             write_score="0"
-            group_number="1" is_regex="false" topic_type="2"
+            group_number="-1" is_regex="false" topic_type="2"
             word_list="all/Exceptions" />
     <WordEntity text="History" language="de" read_score="0"
             write_score="0"
@@ -48,17 +66,17 @@
     <!-- Package Installer -->
     <WordEntity text="Do you want to install this app?" language="en" read_score="0"
             write_score="0"
-            group_number="1" is_regex="false" topic_type="2"
+            group_number="-1" is_regex="false" topic_type="2"
             word_list="PackageInstaller/ContentFilter" />
     <WordEntity text="Do you want to update this app?" language="en" read_score="0"
             write_score="0"
-            group_number="1" is_regex="false" topic_type="2"
+            group_number="-1" is_regex="false" topic_type="2"
             word_list="PackageInstaller/ContentFilter" />
         <!--Bookbeat
         ingore search-->
     <WordEntity text="Search" language="de" read_score="0"
             write_score="0"
-            group_number="1" is_regex="false" topic_type="2"
+            group_number="-1" is_regex="false" topic_type="2"
             word_list="Bookbeat/Exceptions" />
 
         <!--Ard
@@ -66,22 +84,22 @@
     <WordEntity text="Suche nach Episoden und Podcasts"
             language="de" read_score="0"
             write_score="0"
-            group_number="1" is_regex="false" topic_type="2"
+            group_number="-1" is_regex="false" topic_type="2"
             word_list="ArdAudiothek/Exceptions" />
 
         <!--Telegram/BlockPeopleNearbyTab-->
     <WordEntity text="People Nearby" language="en"
             read_score="0" write_score="0"
-            group_number="1" is_regex="false" topic_type="2"
+            group_number="-1" is_regex="false" topic_type="2"
             word_list="Telegram/BlockPeopleNearbyTab" />
             <WordEntity text="Make Myself Visible"
             language="en" read_score="0" write_score="0"
-            group_number="1" is_regex="false" topic_type="2"
+            group_number="-1" is_regex="false" topic_type="2"
             word_list="Telegram/BlockPeopleNearbyTab" />
         <!-- Firefox ignore History, Suggestion for content filters-->
     <WordEntity text="History" language="en"
             read_score="0" write_score="0"
-            group_number="1" is_regex="false" topic_type="2" word_list="Firefox/Exceptions" />
+            group_number="-1" is_regex="false" topic_type="2" word_list="Firefox/Exceptions" />
 <WordEntity
             text="Firefox Suggest" language="en" read_score="0" write_score="0"
             group_number="2" is_regex="false" topic_type="2" word_list="Firefox/Exceptions" />
@@ -94,14 +112,14 @@
         <!-- Pocket Cast-->
     <WordEntity
             text="Recent Searches" language="en" read_score="0" write_score="0"
-            group_number="1" is_regex="false" topic_type="2" word_list="Pocketcast/Exceptions" />
+            group_number="-1" is_regex="false" topic_type="2" word_list="Pocketcast/Exceptions" />
 <WordEntity
             text="CLEAR ALL" language="en" read_score="0" write_score="0"
-            group_number="1" is_regex="false" topic_type="2" word_list="Pocketcast/Exceptions" />
+            group_number="-1" is_regex="false" topic_type="2" word_list="Pocketcast/Exceptions" />
         <!-- New Pipe-->
 <WordEntity
             text="Search" language="en" read_score="0" write_score="0"
-            group_number="1" is_regex="false" topic_type="2" word_list="NewPipe/Exceptions" />
+            group_number="-1" is_regex="false" topic_type="2" word_list="NewPipe/Exceptions" />
 <WordEntity
             text="Settings" language="en" read_score="0" write_score="0"
             group_number="2" is_regex="false" topic_type="2" word_list="NewPipe/Exceptions" />
@@ -112,7 +130,7 @@
         <!-- Filter the android settings to prevent turning off the app-->
 <WordEntity
             text="Use SafeZone" language="en" read_score="0" write_score="0"
-            group_number="1" is_regex="false" topic_type="2" word_list="Settings/ContentFilter" />
+            group_number="-1" is_regex="false" topic_type="2" word_list="Settings/ContentFilter" />
 <WordEntity
             text="Stop SafeZone?" language="en" read_score="0" write_score="0"
             group_number="2" is_regex="false" topic_type="2" word_list="Settings/ContentFilter" />
@@ -146,808 +164,808 @@
 
 <WordEntity
             text="tagesschau" language="de" read_score="32" write_score="32"
-            group_number="1" is_regex="false" topic_type="1" word_list="all/NewsBlocking" />
+            group_number="-1" is_regex="false" topic_type="1" word_list="all/NewsBlocking" />
 <WordEntity
-            text="\\bnackt\\b" language="de" read_score="32" write_score="32" group_number="1"
+            text="\\bnackt\\b" language="de" read_score="32" write_score="32" group_number="-1"
             is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\bpopo\\b"
-            language="de" read_score="32" write_score="32" group_number="1" is_regex="true"
+            language="de" read_score="32" write_score="32" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="\\bpo\\b" language="de"
-            read_score="32" write_score="0" group_number="1" is_regex="true" topic_type="1"
+            read_score="32" write_score="0" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\beier\\s*(treten|foltern|folter|tritt)\\b"
-            language="de" read_score="55" write_score="55" group_number="1" is_regex="true"
+            language="de" read_score="55" write_score="55" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\b(mädchen|freundin|herrin|schwester|frau)\\s*(lecken|befriedigen)\\b"
-            language="de" read_score="55" write_score="55" group_number="1" is_regex="true"
+            language="de" read_score="55" write_score="55" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\b(möse|venusberg|venushügel|labia|scheide|schamlippen|genitalien|muschi|fotze|vulva|kitzler|klitoris)\\b"
-            language="de" read_score="55" write_score="55" group_number="1" is_regex="true"
+            language="de" read_score="55" write_score="55" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="schwanz" language="de"
-            read_score="15" write_score="15" group_number="1" is_regex="false" topic_type="1"
+            read_score="15" write_score="15" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="penis" language="de" read_score="32"
-            write_score="32" group_number="1" is_regex="false" topic_type="1"
+            write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="sperma" language="de" read_score="32" write_score="32" group_number="1"
+            text="sperma" language="de" read_score="32" write_score="32" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="hoden"
-            language="de" read_score="32" write_score="32" group_number="1" is_regex="false"
+            language="de" read_score="32" write_score="32" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="pimmel" language="de"
-            read_score="32" write_score="32" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="entblößt" language="de" read_score="32"
-            write_score="32" group_number="1" is_regex="false" topic_type="1"
+            write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="barbusig" language="de" read_score="32" write_score="32" group_number="1"
+            text="barbusig" language="de" read_score="32" write_score="32" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="unbedeckt"
-            language="de" read_score="15" write_score="15" group_number="1" is_regex="false"
+            language="de" read_score="15" write_score="15" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="entkleidet" language="de"
-            read_score="32" write_score="32" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="unbekleidet" language="de"
             read_score="32"
-            write_score="32" group_number="1" is_regex="false" topic_type="1"
+            write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="oben ohne" language="de" read_score="32" write_score="32" group_number="1"
+            text="oben ohne" language="de" read_score="32" write_score="32" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\b(bumsen|vögeln|ficken|blasen|analverkehr|oralverkehr|geschlechtsverkehr|masturbieren)\\b"
-            language="de" read_score="55" write_score="55" group_number="1" is_regex="true"
+            language="de" read_score="55" write_score="55" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="massagstab" language="de"
-            read_score="15" write_score="15" group_number="1" is_regex="false" topic_type="1"
+            read_score="15" write_score="15" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="kondom" language="de" read_score="15"
-            write_score="32" group_number="1" is_regex="false" topic_type="1"
+            write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
             text="vibrationsring"
-            language="de" read_score="32" write_score="55" group_number="1" is_regex="false"
+            language="de" read_score="32" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="keusch" language="de"
-            read_score="32" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="peniskäfig" language="de"
             read_score="32"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="sexspielzeug" language="de" read_score="32" write_score="32" group_number="1"
+            text="sexspielzeug" language="de" read_score="32" write_score="32" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="liebeskugel"
-            language="de" read_score="32" write_score="32" group_number="1" is_regex="false"
+            language="de" read_score="32" write_score="32" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="nippelklemme"
             language="de"
-            read_score="32" write_score="32" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="vibrator" language="en" read_score="32"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="dildo" language="en" read_score="32" write_score="55" group_number="1"
+            text="dildo" language="en" read_score="32" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="strap-?on"
-            language="en" read_score="32" write_score="55" group_number="1" is_regex="true"
+            language="en" read_score="32" write_score="55" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="analplug" language="en"
-            read_score="32" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="dilator" language="en" read_score="15"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="masturbator" language="en" read_score="55" write_score="55" group_number="1"
+            text="masturbator" language="en" read_score="55" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="fick"
-            language="en" read_score="55" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="55" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="arschloch" language="de"
-            read_score="32" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="gesäß" language="de" read_score="15"
-            write_score="15" group_number="1" is_regex="false" topic_type="1"
+            write_score="15" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="hintern" language="de" read_score="15" write_score="15" group_number="1"
+            text="hintern" language="de" read_score="15" write_score="15" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="hinterteil"
-            language="de" read_score="15" write_score="15" group_number="1" is_regex="false"
+            language="de" read_score="15" write_score="15" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="busen" language="de"
-            read_score="32" write_score="32" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="möpse" language="de" read_score="32"
-            write_score="32" group_number="1" is_regex="false" topic_type="1"
+            write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="titten" language="de" read_score="32" write_score="32" group_number="1"
+            text="titten" language="de" read_score="32" write_score="32" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="brüste"
-            language="de" read_score="32" write_score="32" group_number="1" is_regex="false"
+            language="de" read_score="32" write_score="32" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 
 <WordEntity text="pobacke" language="de"
-            read_score="32" write_score="32" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="schambehaarung" language="de"
             read_score="55"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="\\barsch\\b" language="de" read_score="32" write_score="32" group_number="1"
+            text="\\barsch\\b" language="de" read_score="32" write_score="32" group_number="-1"
             is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
 
         <!-- Kleider -->
 <WordEntity text="thong"
-            language="en" read_score="32" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="32" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="tanga" language="en"
-            read_score="32" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="lingerie" language="en" read_score="32"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="unterwäsche" language="en" read_score="15" write_score="15" group_number="1"
+            text="unterwäsche" language="en" read_score="15" write_score="15" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="reizwäsche"
-            language="de" read_score="32" write_score="32" group_number="1" is_regex="false"
+            language="de" read_score="32" write_score="32" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="mini rock" language="de"
-            read_score="32" write_score="32" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="miniskirt" language="en" read_score="32"
-            write_score="32" group_number="1" is_regex="false" topic_type="1"
+            write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="hot pants" language="en" read_score="32" write_score="55" group_number="1"
+            text="hot pants" language="en" read_score="32" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="panty"
-            language="en" read_score="32" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="32" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 
         <!-- Sex Stuff -->
 <WordEntity text="pups" language="de"
-            read_score="32" write_score="32" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="prostitution" language="de"
             read_score="32"
-            write_score="32" group_number="1" is_regex="false" topic_type="1"
+            write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="furz" language="de" read_score="32" write_score="32" group_number="1"
+            text="furz" language="de" read_score="32" write_score="32" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="prostitution"
-            language="de" read_score="55" write_score="55" group_number="1" is_regex="false"
+            language="de" read_score="55" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="gesichtssitzen"
             language="de"
-            read_score="55" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="55" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="masturbieren" language="de"
             read_score="55"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="scheiße" language="de" read_score="32" write_score="32" group_number="1"
+            text="scheiße" language="de" read_score="32" write_score="32" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 
         <!-- Sexualität -->
 <WordEntity text="sexu"
-            language="de" read_score="32" write_score="32" group_number="1" is_regex="false"
+            language="de" read_score="32" write_score="32" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="orgasmus" language="de"
-            read_score="32" write_score="32" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="\\bintim\\b" language="de"
             read_score="32"
-            write_score="32" group_number="1" is_regex="true" topic_type="1"
+            write_score="32" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 
 <WordEntity
-            text="\\bherrin\\b" language="de" read_score="32" write_score="32" group_number="1"
+            text="\\bherrin\\b" language="de" read_score="32" write_score="32" group_number="-1"
             is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="sklavin"
-            language="de" read_score="32" write_score="32" group_number="1" is_regex="false"
+            language="de" read_score="32" write_score="32" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="dienerin" language="de"
-            read_score="32" write_score="32" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="erniedrigung" language="de"
             read_score="32"
-            write_score="32" group_number="1" is_regex="false" topic_type="1"
+            write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="demütigung" language="de" read_score="32" write_score="32" group_number="1"
+            text="demütigung" language="de" read_score="32" write_score="32" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="femdom"
-            language="en" read_score="55" write_score="100" group_number="1" is_regex="false"
+            language="en" read_score="55" write_score="100" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="findom" language="en"
-            read_score="55" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="55" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="\\bcum\\b" language="en" read_score="55"
-            write_score="55" group_number="1" is_regex="true" topic_type="1"
+            write_score="55" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="\\bsperm\\b" language="en" read_score="55" write_score="55" group_number="1"
+            text="\\bsperm\\b" language="en" read_score="55" write_score="55" group_number="-1"
             is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\brimming\\b"
-            language="en" read_score="55" write_score="55" group_number="1" is_regex="true"
+            language="en" read_score="55" write_score="55" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="\\banal\\b" language="en"
-            read_score="55" write_score="55" group_number="1" is_regex="true" topic_type="1"
+            read_score="55" write_score="55" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="\\benema\\b" language="en"
             read_score="55"
-            write_score="55" group_number="1" is_regex="true" topic_type="1"
+            write_score="55" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="\\bbbw\\b" language="en" read_score="55" write_score="55" group_number="1"
+            text="\\bbbw\\b" language="en" read_score="55" write_score="55" group_number="-1"
             is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\bcock\\b"
-            language="en" read_score="15" write_score="15" group_number="1" is_regex="true"
+            language="en" read_score="15" write_score="15" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="\\bass\\b" language="en"
-            read_score="32" write_score="32" group_number="1" is_regex="true" topic_type="1"
+            read_score="32" write_score="32" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="\\bnudes?\\b" language="en"
             read_score="32"
-            write_score="100" group_number="1" is_regex="true" topic_type="1"
+            write_score="100" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="\\bbsdm\\b" language="en" read_score="55" write_score="55" group_number="1"
+            text="\\bbsdm\\b" language="en" read_score="55" write_score="55" group_number="-1"
             is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\bcbt\\b"
-            language="en" read_score="55" write_score="55" group_number="1" is_regex="true"
+            language="en" read_score="55" write_score="55" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="\\bbutt\\b" language="en"
-            read_score="32" write_score="55" group_number="1" is_regex="true" topic_type="1"
+            read_score="32" write_score="55" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="\\bhottest\\b" language="en"
             read_score="32"
-            write_score="55" group_number="1" is_regex="true" topic_type="1"
+            write_score="55" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="\\bsexy\\b" language="en" read_score="32" write_score="55" group_number="1"
+            text="\\bsexy\\b" language="en" read_score="32" write_score="55" group_number="-1"
             is_regex="true" topic_type="1" word_list="all/NSFW_Filter" /> Continuing with the
         requested format: ```xml <WordEntity text="\\bpee\\b" language="en" read_score="32"
             write_score="55"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
-            text="\\bsex\\b" language="en" read_score="32" write_score="55" group_number="1"
+            text="\\bsex\\b" language="en" read_score="32" write_score="55" group_number="-1"
             is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\btwerking\\b"
-            language="en" read_score="32" write_score="55" group_number="1" is_regex="true"
+            language="en" read_score="32" write_score="55" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="naked" language="de"
-            read_score="55" write_score="32" group_number="1" is_regex="false" topic_type="1"
+            read_score="55" write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="naked" language="en" read_score="55"
-            write_score="32" group_number="1" is_regex="false" topic_type="1"
+            write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="undressed" language="en" read_score="55" write_score="32" group_number="1"
+            text="undressed" language="en" read_score="55" write_score="32" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="stripped"
-            language="en" read_score="55" write_score="32" group_number="1" is_regex="false"
+            language="en" read_score="55" write_score="32" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="bare-ass" language="en"
-            read_score="55" write_score="32" group_number="1" is_regex="false" topic_type="1"
+            read_score="55" write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="topless" language="en" read_score="55"
-            write_score="32" group_number="1" is_regex="false" topic_type="1"
+            write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 
 <WordEntity
-            text="\\btwat\\b" language="en" read_score="55" write_score="100" group_number="1"
+            text="\\btwat\\b" language="en" read_score="55" write_score="100" group_number="-1"
             is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\bprick\\b"
-            language="en" read_score="55" write_score="100" group_number="1" is_regex="true"
+            language="en" read_score="55" write_score="100" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="\\btits\\b" language="en"
-            read_score="32" write_score="32" group_number="1" is_regex="true" topic_type="1"
+            read_score="32" write_score="32" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="\\bbust\\b" language="en" read_score="0"
-            write_score="100" group_number="1" is_regex="true" topic_type="1"
+            write_score="100" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="\\bclit\\b" language="en" read_score="55" write_score="100" group_number="1"
+            text="\\bclit\\b" language="en" read_score="55" write_score="100" group_number="-1"
             is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\bbra\\b"
-            language="en" read_score="15" write_score="15" group_number="1" is_regex="true"
+            language="en" read_score="15" write_score="15" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="\\bcunt\\b" language="en"
-            read_score="55" write_score="100" group_number="1" is_regex="true" topic_type="1"
+            read_score="55" write_score="100" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="\\bpussy\\b" language="en"
             read_score="55"
-            write_score="100" group_number="1" is_regex="true" topic_type="1"
+            write_score="100" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="\\bbum\\b" language="en" read_score="15" write_score="15" group_number="1"
+            text="\\bbum\\b" language="en" read_score="15" write_score="15" group_number="-1"
             is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\btwerk(ing|s)\\b" language="en" read_score="32" write_score="32"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\bball(\\sstretcher|\\sstrechting|busting)\\b" language="en" read_score="32"
-            write_score="32" group_number="1" is_regex="true" topic_type="1"
+            write_score="32" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="porn" language="en" read_score="55" write_score="100" group_number="1"
+            text="porn" language="en" read_score="55" write_score="100" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="cumshot"
-            language="en" read_score="55" write_score="100" group_number="1" is_regex="false"
+            language="en" read_score="55" write_score="100" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="escort" language="en"
-            read_score="32" write_score="100" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="100" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="penetrat" language="en" read_score="15"
-            write_score="32" group_number="1" is_regex="false" topic_type="1"
+            write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="genitial" language="en" read_score="32" write_score="55" group_number="1"
+            text="genitial" language="en" read_score="32" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="creampie"
-            language="en" read_score="55" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="55" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="hentai" language="en"
-            read_score="55" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="55" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="masturbate" language="en"
             read_score="55"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="chastity" language="en" read_score="32" write_score="55" group_number="1"
+            text="chastity" language="en" read_score="32" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="hot body"
-            language="en" read_score="32" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="32" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="hot yoga" language="en"
-            read_score="32" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="asshole" language="en" read_score="32"
-            write_score="100" group_number="1" is_regex="false" topic_type="1"
+            write_score="100" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="butthole" language="en" read_score="32" write_score="100" group_number="1"
+            text="butthole" language="en" read_score="32" write_score="100" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="erotic"
-            language="en" read_score="32" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="32" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="mistress" language="en"
-            read_score="55" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="55" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="xxx" language="en" read_score="55"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="sexual" language="en" read_score="55" write_score="55" group_number="1"
+            text="sexual" language="en" read_score="55" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="cuckold"
-            language="en" read_score="55" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="55" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="humiliation"
             language="en"
-            read_score="15" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="15" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="softcore" language="en" read_score="32"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="figging" language="en" read_score="55" write_score="55" group_number="1"
+            text="figging" language="en" read_score="55" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="fetish"
-            language="en" read_score="55" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="55" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="missionary" language="en"
-            read_score="55" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="55" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="doggy style" language="en"
             read_score="55"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="cowgirl" language="en" read_score="55" write_score="55" group_number="1"
+            text="cowgirl" language="en" read_score="55" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="fingering"
-            language="en" read_score="55" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="55" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="submission" language="en"
-            read_score="32" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="rim job" language="en" read_score="55"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="blowjob" language="en" read_score="55" write_score="55" group_number="1"
+            text="blowjob" language="en" read_score="55" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\bhand(\\s?)job\\b" language="en" read_score="55" write_score="55"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
-            text="quickie" language="en" read_score="55" write_score="55" group_number="1"
+            text="quickie" language="en" read_score="55" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="spanking"
-            language="en" read_score="32" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="32" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="ejaculation"
             language="en"
-            read_score="32" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="foreplay" language="en" read_score="32"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="afterplay" language="en" read_score="32" write_score="55" group_number="1"
+            text="afterplay" language="en" read_score="32" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="squirt"
-            language="en" read_score="32" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="32" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="analingus" language="en"
-            read_score="32" write_score="100" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="100" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="pegging" language="en" read_score="32"
-            write_score="100" group_number="1" is_regex="false" topic_type="1"
+            write_score="100" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="fellatio" language="en" read_score="32" write_score="100" group_number="1"
+            text="fellatio" language="en" read_score="32" write_score="100" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="cunnilingus"
-            language="en" read_score="32" write_score="100" group_number="1" is_regex="false"
+            language="en" read_score="32" write_score="100" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="dry humping"
             language="en"
-            read_score="32" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="orgasm" language="en" read_score="32"
-            write_score="100" group_number="1" is_regex="false" topic_type="1"
+            write_score="100" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="lolita" language="en" read_score="32" write_score="55" group_number="1"
+            text="lolita" language="en" read_score="32" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="scissoring"
-            language="en" read_score="55" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="55" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="kama sutra" language="en"
-            read_score="55" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="55" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="jerk off" language="en" read_score="32"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="climax" language="en" read_score="32" write_score="55" group_number="1"
+            text="climax" language="en" read_score="32" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="adult only"
-            language="en" read_score="55" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="55" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="explicit material"
             language="en"
-            read_score="55" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="55" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="dirty talk" language="en"
             read_score="55"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="self-pleasure" language="en" read_score="55" write_score="55" group_number="1"
+            text="self-pleasure" language="en" read_score="55" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="horny"
-            language="en" read_score="32" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="32" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="bondage" language="en"
-            read_score="32" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="toilet slav" language="en"
             read_score="55"
-            write_score="100" group_number="1" is_regex="false" topic_type="1"
+            write_score="100" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="human toilet" language="en" read_score="55" write_score="100" group_number="1"
+            text="human toilet" language="en" read_score="55" write_score="100" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="feminization"
-            language="en" read_score="55" write_score="100" group_number="1" is_regex="false"
+            language="en" read_score="55" write_score="100" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="elastrator" language="en"
-            read_score="55" write_score="100" group_number="1" is_regex="false" topic_type="1"
+            read_score="55" write_score="100" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="female lead relationship" language="en"
-            read_score="55" write_score="100" group_number="1" is_regex="false" topic_type="1"
+            read_score="55" write_score="100" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="domina" language="en" read_score="55"
-            write_score="100" group_number="1" is_regex="false" topic_type="1"
+            write_score="100" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="latex" language="en" read_score="15" write_score="55" group_number="1"
+            text="latex" language="en" read_score="15" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="edge play"
-            language="en" read_score="55" write_score="100" group_number="1" is_regex="false"
+            language="en" read_score="55" write_score="100" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="corset" language="en"
-            read_score="32" write_score="32" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="shit" language="en" read_score="32"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="fart" language="en" read_score="32" write_score="55" group_number="1"
+            text="fart" language="en" read_score="32" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="furz"
-            language="de" read_score="32" write_score="55" group_number="1" is_regex="false"
+            language="de" read_score="32" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="kacke" language="de"
-            read_score="32" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="piss" language="en" read_score="32"
-            write_score="32" group_number="1" is_regex="false" topic_type="1"
+            write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="poop" language="en" read_score="32" write_score="32" group_number="1"
+            text="poop" language="en" read_score="32" write_score="32" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="asmr"
-            language="en" read_score="32" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="32" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\b(boot|foot)\\s(worship)\\b"
-            language="en" read_score="55" write_score="100" group_number="1" is_regex="true"
+            language="en" read_score="55" write_score="100" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="sensual massage"
             language="en"
-            read_score="32" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="\\bface(\\s?)sitting\\b" language="en"
-            read_score="55" write_score="55" group_number="1" is_regex="true" topic_type="1"
+            read_score="55" write_score="55" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\b(male|slave|enslaved|submissive|pet|sissy|bottom|restrained|caged|locked|bound|gagged|tamed|trained|subjugated)\\s+(boy|male|sissy|man|training|torture)\\b"
-            language="en" read_score="100" write_score="100" group_number="1" is_regex="true"
+            language="en" read_score="100" write_score="100" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\b(girl|nurse|female|women|lady|princess|queen|goddess)\\s+(domination|supremacy|worship|control|authority|moaning)"
-            language="en" read_score="100" write_score="100" group_number="1" is_regex="true"
+            language="en" read_score="100" write_score="100" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\b(eat|inhale|taste|smell|sniff|lick)\\s(her|hers|my)\\b" language="en"
-            read_score="100" write_score="100" group_number="1" is_regex="true" topic_type="1"
+            read_score="100" write_score="100" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="\\b(oral)\\s(sex|stimulation)\\b"
             language="en"
-            read_score="100" write_score="100" group_number="1" is_regex="true" topic_type="1"
+            read_score="100" write_score="100" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="\\bscat\\b" language="en"
             read_score="100"
-            write_score="100" group_number="1" is_regex="true" topic_type="1"
+            write_score="100" group_number="-1" is_regex="true" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
             text="\\b(hot|sexy|seductive|tempting|spicy|naughty|cheeky|(plus\\ssize)|chubby|plump|curvy|luscious|voluptuous|fat|dominant|controlling|strong|powerful|commanding|decisive|alpha|master|top|dom)\\s+(gf|wife|girl|women|female|lady|teacher|nurse)\\b"
-            language="en" read_score="100" write_score="100" group_number="1" is_regex="true"
+            language="en" read_score="100" write_score="100" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="breasts" language="en"
-            read_score="32" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="cleavage" language="en" read_score="32"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="nipple" language="en" read_score="32" write_score="55" group_number="1"
+            text="nipple" language="en" read_score="32" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="buttocks"
-            language="en" read_score="32" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="32" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="booty" language="en"
-            read_score="32" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="bottom" language="en" read_score="15"
-            write_score="15" group_number="1" is_regex="false" topic_type="1"
+            write_score="15" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 
 <WordEntity
-            text="vagina" language="en" read_score="55" write_score="100" group_number="1"
+            text="vagina" language="en" read_score="55" write_score="100" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="clitoris"
-            language="en" read_score="55" write_score="100" group_number="1" is_regex="false"
+            language="en" read_score="55" write_score="100" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="ovaries" language="en"
-            read_score="15" write_score="15" group_number="1" is_regex="false" topic_type="1"
+            read_score="15" write_score="15" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="uterus" language="en" read_score="15"
-            write_score="15" group_number="1" is_regex="false" topic_type="1"
+            write_score="15" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="cervix" language="en" read_score="15" write_score="15" group_number="1"
+            text="cervix" language="en" read_score="15" write_score="15" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="pubic hair"
-            language="en" read_score="15" write_score="15" group_number="1" is_regex="false"
+            language="en" read_score="15" write_score="15" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="love tunnel"
             language="en"
-            read_score="32" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="lady parts" language="en"
             read_score="32"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="butt plug" language="en" read_score="32" write_score="55" group_number="1"
+            text="butt plug" language="en" read_score="32" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="private parts"
-            language="en" read_score="32" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="32" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="nether region"
             language="en"
-            read_score="32" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="32" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="pudenda" language="en" read_score="32"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="labia" language="en" read_score="55" write_score="15" group_number="1"
+            text="labia" language="en" read_score="55" write_score="15" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity
             text="ejaculate"
-            language="en" read_score="55" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="55" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="pecker" language="en"
-            read_score="55" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="55" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="scrotum" language="en" read_score="55"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="bollocks" language="en" read_score="55" write_score="55" group_number="1"
+            text="bollocks" language="en" read_score="55" write_score="55" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="boner"
-            language="en" read_score="55" write_score="55" group_number="1" is_regex="false"
+            language="en" read_score="55" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="gonads" language="en"
-            read_score="55" write_score="55" group_number="1" is_regex="false" topic_type="1"
+            read_score="55" write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity text="semen" language="en" read_score="55"
-            write_score="55" group_number="1" is_regex="false" topic_type="1"
+            write_score="55" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 <WordEntity
-            text="testicle" language="en" read_score="55" write_score="15" group_number="1"
+            text="testicle" language="en" read_score="55" write_score="15" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="urethra"
-            language="en" read_score="55" write_score="32" group_number="1" is_regex="false"
+            language="en" read_score="55" write_score="32" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="prostate" language="en"
-            read_score="55" write_score="32" group_number="1" is_regex="false" topic_type="1"
+            read_score="55" write_score="32" group_number="-1" is_regex="false" topic_type="1"
             word_list="all/NSFW_Filter" />
 
 <WordEntity text="^(?!safe\\.)search\\.brave\\.com.*"
-            language="en" read_score="100" write_score="100" group_number="1" is_regex="true"
+            language="en" read_score="100" write_score="100" group_number="-1" is_regex="true"
             topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^(?!safe\\.)(duckduckgo)\\..*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^google\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^bing\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^ecosia\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^lycos\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^yahoo\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^excite\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^info\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^webcrawler\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^dogpile\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^baidu\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^search\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^boardreader\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^gigablast\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^mojeek\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 
 <WordEntity
             text="^searx\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^brave\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^ecosia\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^metacrawler\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^mywebsearch\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^onesearch\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^lite.qwant\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^startpage\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^searchencrypt\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^torch\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^lite.startpage\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^qwant\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^search\\.aol\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 <WordEntity
             text="^yandex\\.[a-z]{2,3}.*$" language="en" read_score="100" write_score="100"
-            group_number="1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
+            group_number="-1" is_regex="true" topic_type="1" word_list="all/EnforceSafeSearch" />
 
     </WordEntities>
 </root>
