@@ -31,7 +31,7 @@
         <!-- Test List-->
 <WordEntity text="\\bcat\\b" language="de" read_score="15"
             write_score="10"
-            group_number="-1" is_regex="true" topic_type="2"
+            group_number="1" is_regex="true" topic_type="2"
             word_list="test" />
     <WordEntity text="dog" language="de" read_score="5"
             write_score="5"
@@ -47,7 +47,7 @@
         generic ignore list which can be used in many apps-->
     <WordEntity text="Search" language="de" read_score="0"
             write_score="0"
-            group_number="-1" is_regex="false" topic_type="2"
+            group_number="1" is_regex="false" topic_type="2"
             word_list="all/Exceptions" />
     <WordEntity text="History" language="de" read_score="0"
             write_score="0"
@@ -66,17 +66,17 @@
     <!-- Package Installer -->
     <WordEntity text="Do you want to install this app?" language="en" read_score="0"
             write_score="0"
-            group_number="-1" is_regex="false" topic_type="2"
+            group_number="1" is_regex="false" topic_type="2"
             word_list="PackageInstaller/ContentFilter" />
     <WordEntity text="Do you want to update this app?" language="en" read_score="0"
             write_score="0"
-            group_number="-1" is_regex="false" topic_type="2"
+            group_number="1" is_regex="false" topic_type="2"
             word_list="PackageInstaller/ContentFilter" />
         <!--Bookbeat
         ingore search-->
     <WordEntity text="Search" language="de" read_score="0"
             write_score="0"
-            group_number="-1" is_regex="false" topic_type="2"
+            group_number="1" is_regex="false" topic_type="2"
             word_list="Bookbeat/Exceptions" />
 
         <!--Ard
@@ -84,22 +84,22 @@
     <WordEntity text="Suche nach Episoden und Podcasts"
             language="de" read_score="0"
             write_score="0"
-            group_number="-1" is_regex="false" topic_type="2"
+            group_number="1" is_regex="false" topic_type="2"
             word_list="ArdAudiothek/Exceptions" />
 
         <!--Telegram/BlockPeopleNearbyTab-->
     <WordEntity text="People Nearby" language="en"
             read_score="0" write_score="0"
-            group_number="-1" is_regex="false" topic_type="2"
+            group_number="1" is_regex="false" topic_type="2"
             word_list="Telegram/BlockPeopleNearbyTab" />
             <WordEntity text="Make Myself Visible"
             language="en" read_score="0" write_score="0"
-            group_number="-1" is_regex="false" topic_type="2"
+            group_number="1" is_regex="false" topic_type="2"
             word_list="Telegram/BlockPeopleNearbyTab" />
         <!-- Firefox ignore History, Suggestion for content filters-->
     <WordEntity text="History" language="en"
             read_score="0" write_score="0"
-            group_number="-1" is_regex="false" topic_type="2" word_list="Firefox/Exceptions" />
+            group_number="1" is_regex="false" topic_type="2" word_list="Firefox/Exceptions" />
 <WordEntity
             text="Firefox Suggest" language="en" read_score="0" write_score="0"
             group_number="2" is_regex="false" topic_type="2" word_list="Firefox/Exceptions" />
@@ -112,14 +112,14 @@
         <!-- Pocket Cast-->
     <WordEntity
             text="Recent Searches" language="en" read_score="0" write_score="0"
-            group_number="-1" is_regex="false" topic_type="2" word_list="Pocketcast/Exceptions" />
+            group_number="1" is_regex="false" topic_type="2" word_list="Pocketcast/Exceptions" />
 <WordEntity
             text="CLEAR ALL" language="en" read_score="0" write_score="0"
-            group_number="-1" is_regex="false" topic_type="2" word_list="Pocketcast/Exceptions" />
+            group_number="1" is_regex="false" topic_type="2" word_list="Pocketcast/Exceptions" />
         <!-- New Pipe-->
 <WordEntity
             text="Search" language="en" read_score="0" write_score="0"
-            group_number="-1" is_regex="false" topic_type="2" word_list="NewPipe/Exceptions" />
+            group_number="1" is_regex="false" topic_type="2" word_list="NewPipe/Exceptions" />
 <WordEntity
             text="Settings" language="en" read_score="0" write_score="0"
             group_number="2" is_regex="false" topic_type="2" word_list="NewPipe/Exceptions" />
@@ -130,7 +130,7 @@
         <!-- Filter the android settings to prevent turning off the app-->
 <WordEntity
             text="Use SafeZone" language="en" read_score="0" write_score="0"
-            group_number="-1" is_regex="false" topic_type="2" word_list="Settings/ContentFilter" />
+            group_number="1" is_regex="false" topic_type="2" word_list="Settings/ContentFilter" />
 <WordEntity
             text="Stop SafeZone?" language="en" read_score="0" write_score="0"
             group_number="2" is_regex="false" topic_type="2" word_list="Settings/ContentFilter" />
@@ -195,6 +195,9 @@
             word_list="all/NSFW_Filter" />
 <WordEntity
             text="sperma" language="de" read_score="32" write_score="32" group_number="-1"
+            is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
+            <WordEntity
+            text="leckdiener" language="de" read_score="32" write_score="32" group_number="-1"
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="hoden"
             language="de" read_score="32" write_score="32" group_number="-1" is_regex="false"
@@ -563,6 +566,9 @@
             is_regex="false" topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="erotic"
             language="en" read_score="32" write_score="55" group_number="-1" is_regex="false"
+            topic_type="1" word_list="all/NSFW_Filter" />
+<WordEntity text="erotik"
+            language="de" read_score="32" write_score="55" group_number="-1" is_regex="false"
             topic_type="1" word_list="all/NSFW_Filter" />
 <WordEntity text="mistress" language="en"
             read_score="55" write_score="55" group_number="-1" is_regex="false" topic_type="1"
